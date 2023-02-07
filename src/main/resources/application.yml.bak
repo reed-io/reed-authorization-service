@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: AuthroizationService
+  datasource:
+    url: jdbc:mysql://39.97.169.32:33066/auth?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: dba
+    password: Eui2560@%^)
+    driver-class-name: com.mysql.jdbc.Driver
+
+logging:
+  level:
+    root: debug

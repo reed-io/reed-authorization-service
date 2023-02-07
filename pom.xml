@@ -1,0 +1,94 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.reed</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.8-SNAPSHOT</version>
+	</parent>
+
+	<groupId>org.reed</groupId>
+	<artifactId>reed-authorization-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<name>reed-authorization-service</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.reed</groupId>
+			<artifactId>base</artifactId>
+			<version>0.0.8-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.reed</groupId>
+			<artifactId>springbootup</artifactId>
+			<version>0.0.8-SNAPSHOT</version>
+		</dependency>
+
+		<!--<dependency> -->
+		<!--<groupId>org.springframework.cloud</groupId> -->
+		<!--<artifactId>spring-cloud-starter-security</artifactId> -->
+		<!--<version>${springcloud.version}</version> -->
+		<!--</dependency> -->
+
+		<!-- spring security oauth2 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-oauth2</artifactId>
+			<version>${springcloud.version}</version>
+		</dependency>
+
+
+		<!-- view template -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<!--<dependency> -->
+		<!--<groupId>org.springframework.security</groupId> -->
+		<!--<artifactId>spring-security-jwt</artifactId> -->
+		<!--<version>1.0.10.RELEASE</version> -->
+		<!--</dependency> -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
+		<!-- mysql driver -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+
+	</dependencies>
+</project>
